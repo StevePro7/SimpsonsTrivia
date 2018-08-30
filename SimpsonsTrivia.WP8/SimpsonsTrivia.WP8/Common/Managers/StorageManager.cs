@@ -4,8 +4,6 @@
 //using System.Xml.Serialization;
 //using WindowsGame.Common.Data;
 
-using System;
-
 namespace WindowsGame.Common.Managers
 {
 	public interface IStorageManager
@@ -19,11 +17,11 @@ namespace WindowsGame.Common.Managers
 	{
 		//private IsolatedStorageFile storage;
 		//private StoragePersistData persist;
-		private String fileName;
+		//private String fileName;
 
 		public void Initialize()
 		{
-			fileName = "SimpsonsTrivia.xml";
+			//fileName = "SimpsonsTrivia.xml";
 		}
 
 		public void LoadContent()
