@@ -40,12 +40,19 @@ namespace WindowsGame.Common.Inputs
 
 		public Boolean FullScreen()
 		{
-			if (!MouseScreenInput.ButtonHold())
+			if (MouseScreenInput.CurrButtonState == ButtonState.Pressed)
 			{
-				return false;
+				return true;
 			}
 
-			return MyGame.Manager.CollisionManager.FullScreen(MouseScreenInput.CurrMouseX, MouseScreenInput.CurrMouseY);
+			return KeyboardInput.KeyHold(Keys.Space);
+
+			//if (!MouseScreenInput.ButtonHold())
+			//{
+			//  return false;
+			//}
+
+			//return MyGame.Manager.CollisionManager.FullScreen(MouseScreenInput.CurrMouseX, MouseScreenInput.CurrMouseY);
 		}
 
 		public OptionType GetOptionType()
