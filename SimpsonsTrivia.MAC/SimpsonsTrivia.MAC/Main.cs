@@ -6,23 +6,23 @@ using System.Linq;
 using MonoMac.AppKit;
 using MonoMac.Foundation;
 #endregion
+using WindowsGame.Common;
 
-namespace SimpsonsTrivia.MAC
+namespace XamarinMacClassic
 {
-	static class Program
-	{
-		/// <summary>
-		/// The main entry point for the application.
-		/// </summary>
-		static void Main(string[] args)
-		{
-			NSApplication.Init();
+    static class Program
+    {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        static void Main(string[] args)
+        {
+            NSApplication.Init();
 
-			using (var game = new Game1())
-			{
-				game.Run();
-			}
-		}
-	}
+            using (var game = new AnGame())
+            {
+                game.Run();
+            }
+        }
+    }
 }
-
