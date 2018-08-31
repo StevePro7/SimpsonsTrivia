@@ -1,6 +1,11 @@
 # SimpsonsTrivia
 Testing Simpsons Trivia Game
 
+MAC
+Depending on where you launch the program from Visual Studio for MAC
+Determines whether game may launch in full screen or not
+
+
 WP8
 Ninject
 https://www.nuget.org/packages/Portable.Ninject
